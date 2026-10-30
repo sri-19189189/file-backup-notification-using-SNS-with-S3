@@ -20,5 +20,5 @@ Skills demonstrated \n
 Amazon S3 · Amazon SNS · AWS CLI · Event-Driven Architecture · Cloud Storage · Serverless Notifications · IAM Resource Policies
 
 #
-unset BUCKET_NAME SNS_TOPIC_NAME EMAIL_ADDRESS SNS_TOPIC_ARN RANDOM_SUFFIX
+
 
