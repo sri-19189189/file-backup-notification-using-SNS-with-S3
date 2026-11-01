@@ -1,5 +1,3 @@
-# File-backup-notification-using-SNS-with-S3
-Automating AWS backup event alerts with Amazon S3 and Amazon SNS. Receiving email notifications in real-time when a file is uploaded to an S3 bucket. Event-based monitoring. Testing is done with AWS CLI.
 
 # PROBLEM – 
 The issue is that organizations wanted to retain operational reliability while guaranteeing commitment to data privacy laws on real-time file transfer and backup processes. Lacking automated alerts, IT teams frequently finds missing files or unsuccessful backups hours or days later, posing a risk of data loss and violating regulations. Maintaining consistent backup verification procedures is challenging since manual S3 bucket monitoring is time-consuming and prone to human mistake.
@@ -21,7 +19,7 @@ Amazon S3 · Amazon SNS · AWS CLI · Event-Driven Architecture · Cloud Storage
 
 #
 
-# 📦 File Backup Notifications with Amazon S3 and SNS
+# File Backup Notifications with Amazon S3 and SNS
 
 ![AWS](https://img.shields.io/badge/AWS-CloudShell-FF9900?logo=amazonaws&logoColor=white)
 ![S3](https://img.shields.io/badge/Amazon-S3-569A31?logo=amazons3&logoColor=white)
@@ -29,7 +27,7 @@ Amazon S3 · Amazon SNS · AWS CLI · Event-Driven Architecture · Cloud Storage
 ![Category](https://img.shields.io/badge/Category-Storage-blue)
 ![Level](https://img.shields.io/badge/Level-Beginner-brightgreen)
 
-Get an **instant email** every time a file lands in your backup bucket. No servers, no scripts, no manual checking.
+Automating backup event alerts with S3 and SNS. Receiving **email** in real-time when a file is landed in your bucket. Event-based monitoring. Testing done with CLI. No need of servers, no scripts, no manual checking.
 
 ---
 
