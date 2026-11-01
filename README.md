@@ -1,6 +1,6 @@
 
 # PROBLEM – 
-The issue is that organizations wanted to retain operational reliability while guaranteeing commitment to data privacy laws on real-time file transfer and backup processes. Lacking automated alerts, IT teams frequently finds missing files or unsuccessful backups hours or days later, posing a risk of data loss and violating regulations. Maintaining consistent backup verification procedures is challenging since manual S3 bucket monitoring is time-consuming and prone to human mistake.
+
 
 # SOLUTION – 
 A programmed notification system using Amazon S3 event notifications integrated/combined with Amazon SNS (Simple Notification Service) to send instant email alerts whenever files are uploaded to your backup bucket. This cloud-based solution ensures instant awareness of successful file transfers and backup completions by providing real-time monitoring of backup activities without the need for manual inspection or custom monitoring scripts.
@@ -31,7 +31,7 @@ Automating backup event alerts with S3 and SNS. Receiving **email** in real-time
 
 ---
 
-## 📑 Table of Contents
+## Contents
 
 1. [Overview](#-overview)
 2. [Architecture](#-architecture)
@@ -44,11 +44,11 @@ Automating backup event alerts with S3 and SNS. Receiving **email** in real-time
 
 ---
 
-## 🎯 Overview
+## Overview
 
 ### The Problem
 
-Teams need real-time visibility into backup operations to stay reliable and compliant. Without automated alerts, failed or missing backups are often discovered hours or days later, which risks data loss. Checking S3 buckets by hand is slow and error-prone.
+The issue is that organizations wanted to retain operational reliability while guaranteeing commitment to data privacy on real-time file transfer and backup processes. Without automated alerts, failed or missing backups are often discovered hours or days later, which risks data loss. Maintaining consistent backup verification procedures is challenging since manual S3 bucket monitoring is time-consuming and prone to human mistake.
 
 ### The Solution
 
