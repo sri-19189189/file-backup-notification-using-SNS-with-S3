@@ -1,18 +1,3 @@
-
-# Architecture Diagram
-
-
-* Amazon S3: Stores backup files in a bucket.
-* S3 Event Notification: Triggers when a new object is created.
-* Amazon SNS: Sends notifications through email.
-* End Users: Receive email alerts about new backups.
-* Purpose: Automates backup notifications and keeps users informed.
-
-Skills demonstrated \n
-Amazon S3 · Amazon SNS · AWS CLI · Event-Driven Architecture · Cloud Storage · Serverless Notifications · IAM Resource Policies
-
-#
-
 # File Backup Notifications with Amazon S3 and SNS
 
 ![AWS](https://img.shields.io/badge/AWS-CloudShell-FF9900?logo=amazonaws&logoColor=white)
@@ -62,7 +47,11 @@ A programmed notification system using ** Amazon S3 event notifications** integr
 
 <img src="https://github.com/sri-19189189/file-backup-notification-using-SNS-with-S3/blob/main/Architecture_S3%26SNS.png" alt="architecture">
 
-![Network Diagram](images/image1.png)
+* Amazon S3: Stores backup files in a bucket.
+* S3 Event Notification: Triggers when a new object is created.
+* Amazon SNS: Sends notifications through email.
+* End Users: Receive email alerts about new backups.
+* Purpose: Automates backup notifications and keeps users informed.
 
 **How it flows:**
 
