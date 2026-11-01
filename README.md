@@ -23,7 +23,7 @@ Automating backup event alerts with S3 and SNS. Receiving **email** in real-time
 
 ---
 
-## - overview
+## overview
 
 ### The Problem
 
@@ -43,7 +43,7 @@ A programmed notification system using ** Amazon S3 event notifications** integr
 
 ---
 
-# # Architecture
+## Architecture
 
 <img src="https://github.com/sri-19189189/file-backup-notification-using-SNS-with-S3/blob/main/Architecture_S3%26SNS.png" alt="architecture">
 
@@ -70,7 +70,7 @@ A programmed notification system using ** Amazon S3 event notifications** integr
 
 ---
 
-# # ⚙️ Environment Preparation
+## ⚙️ Environment Preparation
 
 Run these in CloudShell. They store your settings in variables so later commands can reuse them.
 
@@ -114,7 +114,7 @@ echo $REGION $ACCOUNT_ID $BUCKET_NAME $SNS_TOPIC_NAME $EMAIL_ADDRESS
 
 ---
 
-# # Deployment Steps
+## Deployment Steps
 
 ### Step 1: Create the SNS topic
 
@@ -228,7 +228,7 @@ echo "Validation test created at $(date)"        > validation-test.txt
 
 ---
 
-# # Validation & Testing
+## Validation & Testing
 
 ### 1. Upload files to trigger notifications
 
@@ -275,7 +275,7 @@ The new email should contain:
 
 ---
 
-# # 🧹 Cleanup
+## 🧹 Cleanup
 
 Delete everything when you are done so you are not left with stray resources.
 
@@ -323,7 +323,7 @@ unset BUCKET_NAME SNS_TOPIC_NAME EMAIL_ADDRESS SNS_TOPIC_ARN SUFFIX ACCOUNT_ID R
 
 ---
 
-# # Key Outcomes
+## Key Outcomes
 
 - S3 event notifications plus SNS give you **real-time backup alerts with no code to maintain**.
 - A **topic policy** with account and bucket conditions keeps publishing locked down to your bucket.
