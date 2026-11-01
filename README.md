@@ -64,9 +64,9 @@ A programmed notification system using ** Amazon S3 event notifications** integr
 
 ## ✅ Prerequisites
 
-- An AWS account with permission to use S3, SNS and Secrets Manager
-- Access to **AWS CloudShell** (open it from the console toolbar)
-- An email address you can check
+- An AWS account with permission to use S3, SNS and Secrets Manager.
+- Access to **AWS CloudShell** (open it from the console toolbar).
+- An email address one can check into.
 
 ---
 
@@ -114,7 +114,7 @@ echo $REGION $ACCOUNT_ID $BUCKET_NAME $SNS_TOPIC_NAME $EMAIL_ADDRESS
 
 ---
 
-## 🚀 Deployment Steps
+## Deployment Steps
 
 ### Step 1: Create the SNS topic
 
