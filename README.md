@@ -213,8 +213,8 @@ aws s3api put-bucket-notification-configuration \
   --notification-configuration file://notification-config.json
 ```
 
-![S3 Event Notification Config]<img src="https://github.com/sri-19189189/file-backup-notification-using-SNS-with-S3/blob/main/images/img 5.png" alt="Event Notification">
-![S3 Event Notification Config, continued]<img src="https://github.com/sri-19189189/file-backup-notification-using-SNS-with-S3/blob/main/images/img 6.png" alt="Event Notification">
+[S3 Event Notification Config]<img src="https://github.com/sri-19189189/file-backup-notification-using-SNS-with-S3/blob/main/images/img 5.png" alt="Event Notification">
+[S3 Event Notification Config, continued]<img src="https://github.com/sri-19189189/file-backup-notification-using-SNS-with-S3/blob/main/images/img 6.png" alt="Event Notification">
 
 
 ### Step 6: Create test files
