@@ -1,12 +1,6 @@
 
-# PROBLEM – 
-
-
-# SOLUTION – 
-A programmed notification system using Amazon S3 event notifications integrated/combined with Amazon SNS (Simple Notification Service) to send instant email alerts whenever files are uploaded to your backup bucket. This cloud-based solution ensures instant awareness of successful file transfers and backup completions by providing real-time monitoring of backup activities without the need for manual inspection or custom monitoring scripts.
-
 # Architecture Diagram
-<img src="https://github.com/sri-19189189/file-backup-notification-using-SNS-with-S3/blob/main/Architecture_S3%26SNS.png" alt="architecture">
+
 
 * Amazon S3: Stores backup files in a bucket.
 * S3 Event Notification: Triggers when a new object is created.
@@ -52,7 +46,8 @@ The issue is that organizations wanted to retain operational reliability while g
 
 ### The Solution
 
-Use **Amazon S3 event notifications** together with **Amazon SNS** to send an email whenever a file is uploaded to the backup bucket. You get immediate confirmation of successful transfers without custom monitoring code.
+A programmed notification system using ** Amazon S3 event notifications** integrated/combined with Amazon SNS **(Simple Notification Service)** to send instant email alerts whenever files are uploaded to your backup bucket. This cloud-based solution ensures instant awareness of successful file transfers and backup completions by providing real-time monitoring of backup activities without the need for manual inspection or custom monitoring scripts.
+
 
 | | |
 |---|---|
@@ -64,6 +59,8 @@ Use **Amazon S3 event notifications** together with **Amazon SNS** to send an em
 ---
 
 ## 🏗️ Architecture
+
+<img src="https://github.com/sri-19189189/file-backup-notification-using-SNS-with-S3/blob/main/Architecture_S3%26SNS.png" alt="architecture">
 
 ![Network Diagram](images/image1.png)
 
