@@ -43,7 +43,7 @@ A programmed notification system using ** Amazon S3 event notifications** integr
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 <img src="https://github.com/sri-19189189/file-backup-notification-using-SNS-with-S3/blob/main/Architecture_S3%26SNS.png" alt="architecture">
 
@@ -62,7 +62,7 @@ A programmed notification system using ** Amazon S3 event notifications** integr
 
 ---
 
-## ✅ Prerequisites
+##  Prerequisites
 
 - An AWS account with permission to use S3, SNS and Secrets Manager.
 - Access to **AWS CloudShell** (open it from the console toolbar).
