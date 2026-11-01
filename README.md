@@ -127,7 +127,7 @@ SNS_TOPIC_ARN=$(aws sns create-topic \
 echo $SNS_TOPIC_ARN
 ```
 
-<img src="https://github.com/sri-19189189/file-backup-notification-using-SNS-with-S3/blob/main/images/img 1.png" alt="SNS Topic">
+SNS Topic <img src="https://github.com/sri-19189189/file-backup-notification-using-SNS-with-S3/blob/main/images/img 1.png" alt="SNS Topic">
 
 ### Step 2: Subscribe your email to the topic
 
@@ -140,7 +140,7 @@ aws sns subscribe \
 
 > ⚠️ **Important:** AWS sends a confirmation email. Open it and click **Confirm subscription**, otherwise you will not receive alerts.
 
-<img src="https://github.com/sri-19189189/file-backup-notification-using-SNS-with-S3/blob/main/images/img 2.png" alt="E-Mail address">
+Subscribing, E-Mail <img src="https://github.com/sri-19189189/file-backup-notification-using-SNS-with-S3/blob/main/images/img 2.png" alt="E-Mail address">
 
 ### Step 3: Create the S3 bucket (versioning + encryption)
 
@@ -159,7 +159,7 @@ aws s3api put-bucket-encryption \
   --server-side-encryption-configuration '{"Rules":[{"ApplyServerSideEncryptionByDefault":{"SSEAlgorithm":"AES256"}}]}'
 ```
 
-<img src="https://github.com/sri-19189189/file-backup-notification-using-SNS-with-S3/blob/main/images/img 3.png" alt="S3 Bucketing">
+S3 Bucketing <img src="https://github.com/sri-19189189/file-backup-notification-using-SNS-with-S3/blob/main/images/img 3.png" alt="S3 Bucketing">
 
 ### Step 4: Let S3 publish to the SNS topic
 
@@ -191,7 +191,7 @@ aws sns set-topic-attributes \
   --attribute-value file://sns-policy.json
 ```
 
-<img src="https://github.com/sri-19189189/file-backup-notification-using-SNS-with-S3/blob/main/images/img 4.png" alt="Event Notification">
+Event Notification <img src="https://github.com/sri-19189189/file-backup-notification-using-SNS-with-S3/blob/main/images/img 4.png" alt="Event Notification">
 
 ### Step 5: Turn on S3 event notifications
 
@@ -213,8 +213,8 @@ aws s3api put-bucket-notification-configuration \
   --notification-configuration file://notification-config.json
 ```
 
-[S3 Event Notification Config]<img src="https://github.com/sri-19189189/file-backup-notification-using-SNS-with-S3/blob/main/images/img 5.png" alt="Event Notification">
-[S3 Event Notification Config, continued]<img src="https://github.com/sri-19189189/file-backup-notification-using-SNS-with-S3/blob/main/images/img 6.png" alt="Event Notification">
+S3 Event Notification Config <img src="https://github.com/sri-19189189/file-backup-notification-using-SNS-with-S3/blob/main/images/img 5.png" alt="Event Notification">
+S3 Event Notification Config, continued<img src="https://github.com/sri-19189189/file-backup-notification-using-SNS-with-S3/blob/main/images/img 6.png" alt="Event Notification">
 
 
 ### Step 6: Create test files
@@ -228,7 +228,7 @@ echo "Validation test created at $(date)"        > validation-test.txt
 
 ---
 
-## 🧪 Validation & Testing
+## Validation & Testing
 
 ### 1. Upload files to trigger notifications
 
@@ -323,7 +323,7 @@ unset BUCKET_NAME SNS_TOPIC_NAME EMAIL_ADDRESS SNS_TOPIC_ARN SUFFIX ACCOUNT_ID R
 
 ---
 
-## 💡 Key Takeaways
+## Key Outcomes
 
 - S3 event notifications plus SNS give you **real-time backup alerts with no code to maintain**.
 - A **topic policy** with account and bucket conditions keeps publishing locked down to your bucket.
